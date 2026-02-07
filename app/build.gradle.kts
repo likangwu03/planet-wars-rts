@@ -99,3 +99,13 @@ tasks.register<JavaExec>("runRemotePairEvaluation") {
     val raw = project.findProperty("args")?.toString()
     args = if (raw != null) listOf(raw) else listOf("5001,5002,10,50")
 }
+
+tasks.register<JavaExec>("runVisualGame") {
+    mainClass.set("games.planetwars.view.RunVisualGameKt")
+    classpath = sourceSets["main"].runtimeClasspath
+}
+
+tasks.register<JavaExec>("runSampleCompetitionGame") {
+    mainClass.set("games.planetwars.view.RunSampleCompetitionGameKt")
+    classpath = sourceSets["main"].runtimeClasspath
+}
