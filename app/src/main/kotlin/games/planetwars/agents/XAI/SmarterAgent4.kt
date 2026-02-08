@@ -1,4 +1,4 @@
-package games.planetwars.agents.random
+package games.planetwars.agents.XAI
 
 
 import games.planetwars.agents.Action
@@ -34,7 +34,7 @@ class SmarterAgent4(
         if (greedyMove != null) return greedyMove
 
         // RHEA with population and elitism
-        val wrapper = GameStateWrapper(gameState, GameParams(), player)
+        val wrapper = GameStateWrapper2(gameState, GameParams(), player)
         val population = mutableListOf<ScoredSeq>()
 
         // Initialize population
@@ -142,7 +142,7 @@ class SmarterAgent4(
     }
 }
 
-class GameStateWrapper(
+class GameStateWrapper2(
     val gameState: GameState,
     val params: GameParams,
     val player: Player

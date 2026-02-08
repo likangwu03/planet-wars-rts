@@ -1,4 +1,4 @@
-package games.planetwars.agents.random
+package games.planetwars.agents.XAI
 
 import games.planetwars.agents.Action
 import games.planetwars.agents.PartialObservationPlayer

@@ -1,4 +1,4 @@
-package games.planetwars.agents.strategic
+package games.planetwars.agents.Titans
 
 import games.planetwars.agents.Action
 import games.planetwars.agents.PlanetWarsPlayer

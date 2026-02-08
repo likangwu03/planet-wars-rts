@@ -1,4 +1,4 @@
-package games.planetwars.agents.random
+package games.planetwars.agents.XAI
 
 
 // package games.planetwars.agents.smart
@@ -9,6 +9,7 @@ import games.planetwars.core.GameParams
 import games.planetwars.core.GameState
 import games.planetwars.core.GameStateFactory
 import games.planetwars.runners.GameRunner
+import games.planetwars.agents.random.CarefulRandomAgent
 
 // private val SmarterAgent.source: Any
 

@@ -2,6 +2,7 @@ package games.planetwars.view
 
 import games.planetwars.agents.random.BetterRandomAgent
 import games.planetwars.agents.random.CarefulRandomAgent
+import games.planetwars.agents.DoNothingAgent
 import games.planetwars.agents.Titans.MCTSAgent
 import games.planetwars.core.GameParams
 import games.planetwars.runners.GameRunner
@@ -14,7 +15,7 @@ fun main() {
     val agent1 = MCTSAgent()
     val agent2 = BetterRandomAgent()
     // sub in different agents as needed
-//    val agent1 = PureRandomAgent()
+    // val agent1 = DoNothingAgent()
     val gameRunner = GameRunner(agent1, agent2, gameParams)
 
     val title = "${agent1.getAgentType()} : Planet Wars : ${agent2.getAgentType()}"
