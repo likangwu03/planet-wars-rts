@@ -4,6 +4,8 @@ import games.planetwars.agents.random.BetterRandomAgent
 import games.planetwars.agents.random.CarefulRandomAgent
 import games.planetwars.agents.DoNothingAgent
 import games.planetwars.agents.Titans.MCTSAgent
+import games.planetwars.agents.XAI.SmarterAgent4
+
 import games.planetwars.core.GameParams
 import games.planetwars.runners.GameRunner
 import games.planetwars.core.GameStateFactory
@@ -12,7 +14,7 @@ import xkg.jvm.AppLauncher
 fun main() {
     val gameParams = GameParams(numPlanets = 30, maxTicks = 1000)
     val gameState = GameStateFactory(gameParams).createGame()
-    val agent1 = MCTSAgent()
+    val agent1 = SmarterAgent4()
     val agent2 = BetterRandomAgent()
     // sub in different agents as needed
     // val agent1 = DoNothingAgent()
